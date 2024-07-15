@@ -5,7 +5,7 @@ public struct FileObject: Identifiable, Hashable, Codable, Sendable {
   public var name: String?
   public var bucketId: String?
   public var owner: String?
-  public var id: UUID
+  public var id: UUID?
   public var updatedAt: Date?
   public var createdAt: Date?
   public var lastAccessedAt: Date?
@@ -15,7 +15,7 @@ public struct FileObject: Identifiable, Hashable, Codable, Sendable {
     name: String? = nil,
     bucketId: String? = nil,
     owner: String? = nil,
-    id: UUID,
+    id: UUID?,
     updatedAt: Date? = nil,
     createdAt: Date? = nil,
     lastAccessedAt: Date? = nil,
